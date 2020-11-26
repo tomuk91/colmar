@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Default Styles */
+
+ul, li {
+    list-style-type: none;
+}
+
+li {
+    margin-right: 10px;
+}
+
+a { 
+    color: #484848;
+    text-decoration: none;
+}
+
+h1 {
+    color: #282828;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 40px;
+    height: 64px;
+}
+
+.menu span {
+  font-size: 22px;
+  margin-right: 24px;
+  margin: 16px;
+}
+
+#logo {
+    margin: 0;
+    display: flex;
+    align-content: flex-start;
+    margin-left: 24px;
+    height: 32px;
+}
+
+header h1 {
+    color: #C0C0C0;
+    font-weight: 200;
+}
+
+#logo b {
+    color: 	#383838;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Banner */
+
+.banner {
+    background-color: silver;
+    width: 100%;
+    height: 900px;
+}
+
+#students {
+    display: inline-flex;
+    align-content: center;
+    margin: 32px 24px 32px 24px;
+}
