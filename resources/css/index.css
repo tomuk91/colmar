@@ -1,7 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+
+*{ 
+    box-sizing: border-box;
 }
 
 
@@ -12,7 +11,7 @@ ul, li {
 }
 
 li {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 a { 
@@ -20,8 +19,13 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    color: #282828;
+h1,
+h2 {
+    color: #404040;
+}
+
+html {
+    font-size: 16px;
 }
 
 /* Header */
@@ -30,22 +34,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 20px 40px;
-    height: 64px;
+    padding: 1.25rem 2.5rem;
+    height: 4rem;
 }
 
 .menu span {
-  font-size: 22px;
-  margin-right: 24px;
-  margin: 16px;
+  font-size: 1.375rem;
+  margin-right: 1.5rem;
+  margin: 1rem;
 }
 
 #logo {
     margin: 0;
     display: flex;
     align-content: flex-start;
-    margin-left: 24px;
-    height: 32px;
+    margin-left: 1.5rem;
+    height: 2rem;
 }
 
 header h1 {
@@ -58,20 +62,63 @@ header h1 {
 }
 
 #logo img {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.215rem;
 }
 
 /* Banner */
-
 .banner {
+    display: flex;
     background-color: silver;
-    width: 100%;
-    height: 900px;
+    
 }
 
-#students {
-    display: inline-flex;
+.banner img {
+    display: block;
+    margin: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.righttext {
+    display: inline-block;
+    margin: 12.5rem 3.125rem;
     align-content: center;
-    margin: 32px 24px 32px 24px;
+
+}
+
+.righttext h1 {
+    font-size: 5rem;
+}
+
+.righttext h2 {
+    font-size: 2.063rem;
+}
+
+.banner .righttext {
+    box-sizing: border-box;
+}
+
+.righttext button {
+    background-color: #404040;
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 12.5rem 0.5rem 12.5rem;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/* Section 2 */
+
+#section2 {
+    display: flex;
+}
+
+.rowitem {
+    display: flex;
+    flex-flow: column;
+    border: black;
+    border-style: solid;
 }
